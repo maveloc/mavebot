@@ -20,7 +20,7 @@ async def chiste(ctx):
     j = await Jokes()  # Initialise the class
     chiste = await j.get_joke(lang="es", amount=1, joke_type="single", response_format="txt")  # Retrieve a random joke
     await ctx.send(chiste)
-#linea de control
+
 #comando para que el bot salude
 @bot.command()
 async def hola(ctx):
